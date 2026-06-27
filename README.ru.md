@@ -1,4 +1,5 @@
 <p align="right">
+  <img src="./assets/orcestr-logo.png" alt="Логотип Orcestr" width="42" height="42" align="left" />
   <a href="./README.md">English</a> · <strong>Русский</strong>
 </p>
 
