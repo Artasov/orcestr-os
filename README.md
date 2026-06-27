@@ -136,10 +136,11 @@ The UI library should be useful on its own. It is the first step toward a broade
 ## Roadmap
 
 1. Stabilize Beauty beta.
-2. Add a reliable credit purchase flow and prepare free beta testing for holders.
+2. Prepare SOL payments for beta testing.
+2. `31.07.2026` - Open beta testing and prepare free beta-test access for holders.
 3. Improve public sharing and gallery conversion.
 4. Continue real product surfaces to stress-test the shared foundation.
-5. Extract reusable UI primitives into `orcestr-ui`.
+5. `16.08.2026` - Extract reusable UI primitives into `orcestr-ui`.
 6. Open selected workflow and backend pieces when they are stable enough.
 7. Grow the Telegram community through development updates, beta feedback and product discussion.
 
