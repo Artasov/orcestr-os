@@ -4,9 +4,9 @@
 
 # Orcestr Community Token
 
-ORCESTR планируется как экспериментальный Community Support Token для Orcestr и автора [@Artasov](https://github.com/Artasov).
+ORCESTR - экспериментальный Community Support Token для Orcestr и автора [@Artasov](https://github.com/Artasov).
 
-Orcestr - личная продуктовая кодовая база, которая развивается в публичный developer toolkit и open-source библиотеку. Токен не является центром проекта. Это возможный community-слой для тех, кто хочет рано следить за этой работой и поддерживать ее.
+Orcestr - личная продуктовая кодовая база, которая развивается в публичный developer toolkit и open-source библиотеку. ORCESTR - optional supporter layer для тех, кто хочет рано следить за разработкой, участвовать в community moments и получать ограниченные нефинансовые perks, когда они уместны.
 
 ## Название
 
@@ -29,9 +29,9 @@ Ticker: ORCESTR
 
 ## Связь с продуктом
 
-Orcestr остается product-first. Токен может поддерживать community вокруг работы, но он не заменяет продукт, roadmap или бизнес-модель.
+Orcestr остается product-first. Community layer должен следовать за реальной продуктовой работой: Beauty, Deliveries, Orcestr UI и общей foundation. Токен не заменяет продукт, roadmap или бизнес-модель.
 
-Разработка продукта должна оставаться ценной даже если у токена нет рыночной стоимости.
+Главная ценность создается в продуктовой разработке. Utility токена, если она появится, должна идти из реального прогресса продукта и участия community.
 
 ## Что токен не дает
 

@@ -141,13 +141,13 @@ The UI library should be useful on its own. It is the first step toward a broade
 4. Continue real product surfaces to stress-test the shared foundation.
 5. Extract reusable UI primitives into `orcestr-ui`.
 6. Open selected workflow and backend pieces when they are stable enough.
-7. Build a small community around the product, not around hype.
+7. Grow the Telegram community through development updates, beta feedback and product discussion.
 
 ## Community Token
 
-Token details will be added later.
+ORCESTR is an experimental Community Support Token connected to the Orcestr ecosystem.
 
-ORCESTR is planned as an experimental Community Support Token for the Orcestr ecosystem.
+It is an optional supporter layer for people following the build early: development updates, beta participation, supporter identity and limited non-financial perks when they make sense.
 
 It is not equity, not revenue share, not governance over the company and not a promise of profit. The product does not depend on the token.
 
