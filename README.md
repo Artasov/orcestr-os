@@ -3,7 +3,15 @@
   <strong>English</strong> · <a href="./README.ru.md">Русский</a>
 </p>
 
-# Orcestr
+<p align="center">
+  <a href="https://orcestr.com">
+    <img src="./assets/orcestr-banner.webp" alt="Orcestr banner" width="100%" />
+  </a>
+</p>
+
+# [Orcestr](https://orcestr.com)
+
+Main website: [orcestr.com](https://orcestr.com)
 
 Orcestr is a personal product-codebase growing into a public developer toolkit and open-source library.
 
@@ -14,14 +22,28 @@ The public direction has two tracks:
 - product surfaces people can use;
 - open-source pieces extracted from production, starting with Orcestr UI and later moving into workflow, backend and application infrastructure.
 
+## Ecosystem Projects
+
+Orcestr is not a single repository. It is a product ecosystem with public products, open-source tools and a shared platform layer.
+
+| Project | Type | Link |
+| --- | --- | --- |
+| Orcestr Platform | Main website and product entry point | [orcestr.com](https://orcestr.com) |
+| Beauty | AI look product | [beauty.orcestr.com](https://beauty.orcestr.com) |
+| Deliveries | Operations product for purchasing, stock, orders and finance | [deliveries.orcestr.com](https://deliveries.orcestr.com) |
+| Repo Notifier | GitHub Action for Telegram development updates | [Artasov/orcestr-repo-notifier](https://github.com/Artasov/orcestr-repo-notifier) |
+| Orcestr UI | Public UI component library extracted from product work | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui) |
+| Overview | Public product and ecosystem description | [Artasov/orcestr-overview](https://github.com/Artasov/orcestr-overview) |
+
 ## Contents
 
+- [Ecosystem Projects](#ecosystem-projects)
 - [Product Direction](#product-direction)
 - [Product Surfaces](#product-surfaces)
   - [Beauty](#beauty)
   - [Deliveries](#deliveries)
   - [Platform Foundation](#platform-foundation)
-  - [Open Source: Orcestr UI](#open-source-orcestr-ui)
+- [Public Repositories](#public-repositories)
 - [Roadmap](#roadmap)
 - [Community Token](#community-token)
 - [Maintainer](#maintainer)
@@ -121,9 +143,17 @@ Navigation:
 - background jobs and scheduler;
 - admin tooling.
 
-### Open Source: Orcestr UI
+## Public Repositories
 
-Planned public developer work starts with UI:
+These repositories are the first public pieces around Orcestr.
+
+### Repo Notifier
+
+[Repo Notifier](https://github.com/Artasov/orcestr-repo-notifier) is a GitHub Action that turns repository changes into clear Telegram updates. It is useful for product teams, founders and public build logs where raw commits are too noisy.
+
+### Orcestr UI
+
+[Orcestr UI](https://github.com/Artasov/orcestr-ui) is the planned public UI layer extracted from real Orcestr product work:
 
 - `orcestr-ui` component library;
 - app shell patterns for operational dashboards;

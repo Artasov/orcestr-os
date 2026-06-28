@@ -3,7 +3,15 @@
   <a href="./README.md">English</a> · <strong>Русский</strong>
 </p>
 
-# Orcestr
+<p align="center">
+  <a href="https://orcestr.com">
+    <img src="./assets/orcestr-banner.webp" alt="Баннер Orcestr" width="100%" />
+  </a>
+</p>
+
+# [Orcestr](https://orcestr.com)
+
+Основной сайт: [orcestr.com](https://orcestr.com)
 
 Orcestr - личная продуктовая кодовая база, которая развивается в публичный developer toolkit и open-source библиотеку.
 
@@ -17,14 +25,28 @@ files, notifications, workflows, статистика и фоновые зада
 - open-source части, выделенные из production, начиная с Orcestr UI и дальше переходя к workflow, backend и application
   infrastructure.
 
+## Проекты экосистемы
+
+Orcestr - это не один репозиторий, а экосистема продуктов, open-source инструментов и общей платформенной основы.
+
+| Проект | Тип | Ссылка |
+| --- | --- | --- |
+| Orcestr Platform | Основной сайт и вход в продукт | [orcestr.com](https://orcestr.com) |
+| Beauty | AI-продукт для подбора образа | [beauty.orcestr.com](https://beauty.orcestr.com) |
+| Deliveries | Операционный продукт для закупок, остатков, заказов и финансов | [deliveries.orcestr.com](https://deliveries.orcestr.com) |
+| Repo Notifier | GitHub Action для Telegram-обновлений по разработке | [Artasov/orcestr-repo-notifier](https://github.com/Artasov/orcestr-repo-notifier) |
+| Orcestr UI | Публичная UI-библиотека из продуктовой разработки | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui) |
+| Overview | Публичное описание продукта и экосистемы | [Artasov/orcestr-overview](https://github.com/Artasov/orcestr-overview) |
+
 ## Содержание
 
+- [Проекты экосистемы](#проекты-экосистемы)
 - [Продуктовое направление](#продуктовое-направление)
 - [Product surfaces](#product-surfaces)
     - [Beauty](#beauty)
     - [Deliveries](#deliveries)
     - [Platform foundation](#platform-foundation)
-    - [Open Source: Orcestr UI](#open-source-orcestr-ui)
+- [Публичные репозитории](#публичные-репозитории)
 - [Roadmap](#roadmap)
 - [Community token](#community-token)
 - [Maintainer](#maintainer)
@@ -132,9 +154,17 @@ Deliveries - глубокий product surface для проверки общей
 - background jobs и scheduler;
 - admin tooling.
 
-### Open Source: Orcestr UI
+## Публичные репозитории
 
-Планируемая публичная developer-работа начинается с UI:
+Первые публичные части вокруг Orcestr.
+
+### Repo Notifier
+
+[Repo Notifier](https://github.com/Artasov/orcestr-repo-notifier) - GitHub Action, который превращает изменения в репозитории в понятные Telegram-обновления. Он нужен продуктовым командам, фаундерам и публичным build logs, где сырые коммиты слишком шумные.
+
+### Orcestr UI
+
+[Orcestr UI](https://github.com/Artasov/orcestr-ui) - планируемый публичный UI-слой, выделенный из реальной продуктовой разработки:
 
 - библиотека компонентов `orcestr-ui`;
 - app shell patterns для операционных dashboard;
