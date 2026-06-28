@@ -25,14 +25,14 @@ The public direction has two tracks:
 
 Orcestr is not a single repository. It is a product ecosystem with public products, open-source tools and a shared platform layer.
 
-| Project | Type | Link |
-| --- | --- | --- |
-| Orcestr Platform | Main website and product entry point | [orcestr.com](https://orcestr.com) |
-| Beauty | AI look product | [beauty.orcestr.com](https://beauty.orcestr.com) |
-| Deliveries | Operations product for purchasing, stock, orders and finance | [deliveries.orcestr.com](https://deliveries.orcestr.com) |
-| Repo Notifier | GitHub Action for Telegram development updates | [Artasov/orcestr-repo-notifier](https://github.com/Artasov/orcestr-repo-notifier) |
-| Orcestr UI | Public UI component library extracted from product work | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui) |
-| Overview | Public product and ecosystem description | [Artasov/orcestr-overview](https://github.com/Artasov/orcestr-overview) |
+| Project       | Type                                                           | Link                                                                              |
+|---------------|----------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Orcestr       | Main website and product entry point                           | [orcestr.com](https://orcestr.com)                                                |
+| Beauty        | AI look product                                                | [beauty.orcestr.com](https://beauty.orcestr.com)                                  |
+| Deliveries    | Operations product for purchasing, stock, orders and finance   | [deliveries.orcestr.com](https://deliveries.orcestr.com)                          |
+| UI Kit        | Public UI component library extracted from product work        | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui)                       |
+| Repo Notifier | GitHub Action for Codex-generated Telegram development updates | [Artasov/orcestr-repo-notifier](https://github.com/Artasov/orcestr-repo-notifier) |
+| Overview      | Public product and ecosystem description                       | [Artasov/orcestr-overview](https://github.com/Artasov/orcestr-overview)           |
 
 ## Contents
 
@@ -41,6 +41,8 @@ Orcestr is not a single repository. It is a product ecosystem with public produc
 - [Product Surfaces](#product-surfaces)
   - [Beauty](#beauty)
   - [Deliveries](#deliveries)
+  - [Orcestr UI Kit](#orcestr-ui)
+  - [Repo Notifier](#orcestr-repo-notifier)
   - [Platform Foundation](#platform-foundation)
 - [Public Repositories](#public-repositories)
 - [Roadmap](#roadmap)
@@ -116,6 +118,22 @@ Navigation:
 - tasks, approvals, comments and documents;
 - operational dashboards and search.
 
+### Orcestr UI
+
+Status: public UI layer.
+
+[Orcestr UI](https://github.com/Artasov/orcestr-ui) is the reusable UI foundation extracted from real Orcestr product work. It collects components, app shell patterns, workflow primitives and design tokens used across product surfaces.
+
+Tags: UI, components, dashboards, workflows, design tokens, open source.
+
+### Orcestr Repo Notifier
+
+Status: public GitHub Action.
+
+[Orcestr Repo Notifier](https://github.com/Artasov/orcestr-repo-notifier) turns repository changes into clear Telegram updates. It helps teams, founders and public builders show product progress after each push without manually writing every update.
+
+Tags: Codex, Telegram, GitHub Actions, review, release notes, development updates.
+
 ### Platform Foundation
 
 Status: shared foundation.
@@ -146,21 +164,9 @@ Navigation:
 
 These repositories are the first public pieces around Orcestr.
 
-### Repo Notifier
-
-[Repo Notifier](https://github.com/Artasov/orcestr-repo-notifier) is a GitHub Action that turns repository changes into clear Telegram updates. It is useful for product teams, founders and public build logs where raw commits are too noisy.
-
-### Orcestr UI
-
-[Orcestr UI](https://github.com/Artasov/orcestr-ui) is the planned public UI layer extracted from real Orcestr product work:
-
-- `orcestr-ui` component library;
-- app shell patterns for operational dashboards;
-- modal, table, filter and workflow primitives;
-- design tokens extracted from production modules;
-- examples from product surfaces where they can be safely public.
-
-The UI library should be useful on its own. It is the first step toward a broader open-source layer built from real product work.
+- [Orcestr UI](https://github.com/Artasov/orcestr-ui) - reusable UI components and product interface primitives.
+- [Orcestr Repo Notifier](https://github.com/Artasov/orcestr-repo-notifier) - GitHub Action for Codex-generated Telegram development updates.
+- [Orcestr Overview](https://github.com/Artasov/orcestr-overview) - public description of the product ecosystem.
 
 ## Roadmap
 
