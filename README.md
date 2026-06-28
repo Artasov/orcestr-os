@@ -25,14 +25,14 @@ The public direction has two tracks:
 
 Orcestr is not a single repository. It is a product ecosystem with public products, open-source tools and a shared platform layer.
 
-| Project       | Type                                                           | Link                                                                              |
-|---------------|----------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| Orcestr       | Main website and product entry point                           | [orcestr.com](https://orcestr.com)                                                |
-| Beauty        | AI look product                                                | [beauty.orcestr.com](https://beauty.orcestr.com)                                  |
-| Deliveries    | Operations product for purchasing, stock, orders and finance   | [deliveries.orcestr.com](https://deliveries.orcestr.com)                          |
-| UI Kit        | Public UI component library extracted from product work        | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui)                       |
-| Repo Notifier | GitHub Action for Codex-generated Telegram development updates | [Artasov/orcestr-repo-notifier](https://github.com/Artasov/orcestr-repo-notifier) |
-| Overview      | Public product and ecosystem description                       | [Artasov/orcestr-overview](https://github.com/Artasov/orcestr-overview)           |
+| Project        | Type                                                           | Link                                                                              |
+|----------------|----------------------------------------------------------------|-----------------------------------------------------------------------------------|
+| Orcestr        | Main website and product entry point                           | [orcestr.com](https://orcestr.com)                                                |
+| Beauty         | AI look product                                                | [beauty.orcestr.com](https://beauty.orcestr.com)                                  |
+| Deliveries     | Operations product for purchasing, stock, orders and finance   | [deliveries.orcestr.com](https://deliveries.orcestr.com)                          |
+| Orcestr UI Kit | Public UI component library extracted from product work        | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui)                       |
+| Repo Notifier  | GitHub Action for Codex-generated Telegram development updates | [Artasov/orcestr-repo-notifier](https://github.com/Artasov/orcestr-repo-notifier) |
+| Overview       | Public product and ecosystem description                       | [Artasov/orcestr-overview](https://github.com/Artasov/orcestr-overview)           |
 
 ## Contents
 
