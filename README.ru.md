@@ -8,68 +8,102 @@
   </a>
 </p>
 
-# [Orcestr](https://orcestr.com)
+# [Orcestr](https://orcestr.com) is open-source
 
 Основной сайт: [orcestr.com](https://orcestr.com)
 
-Orcestr - личная продуктовая кодовая база, которая развивается в публичный developer toolkit и open-source библиотеку.
+Orcestr - экосистема где есть open-source библиотеки, developer toolkit, прикладные инструкменты и реальные продукты.
 
-Кодовая база строится вокруг общей продуктовой основы: UI patterns, application shell, identity, permissions, credits,
-files, notifications, workflows, статистика и фоновые задачи. Product surfaces используют эту основу в реальных
-сценариях, а самые сильные переиспользуемые части со временем могут становиться публичными пакетами.
+Публичное направление состоит из трех частей:
 
-Публичное направление состоит из двух частей:
+- Open-source **lib**s.
+- Open-source **tool**s.
+- Web **product**s.
 
-- product surfaces, которыми можно пользоваться;
-- open-source части, выделенные из production, начиная с Orcestr UI и дальше переходя к workflow, backend и application
-  infrastructure.
+ ## Проекты экосистемы
 
-## Проекты экосистемы
-
-Orcestr - это не один репозиторий, а экосистема продуктов, open-source инструментов и общей платформенной основы.
-
-| Проект | Тип | Ссылка |
-| --- | --- | --- |
-| Orcestr Platform | Основной сайт и вход в продукт | [orcestr.com](https://orcestr.com) |
-| Beauty | AI-продукт для подбора образа | [beauty.orcestr.com](https://beauty.orcestr.com) |
-| Deliveries | Операционный продукт для закупок, остатков, заказов и финансов | [deliveries.orcestr.com](https://deliveries.orcestr.com) |
-| Orcestr Repo Notifier | GitHub Action для Codex-generated Telegram development updates | [Artasov/orcestr-repo-notifier](https://github.com/Artasov/orcestr-repo-notifier) |
-| Orcestr UI | Публичная UI-библиотека из продуктовой разработки | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui) |
-| Overview | Публичное описание продукта и экосистемы | [Artasov/orcestr-overview](https://github.com/Artasov/orcestr-overview) |
+| Проект | Тип | Статус | Ссылка |
+| --- | --- | --- | --- |
+| Orcestr Auth | Общий слой авторизации для React, Next.js и FastAPI-сервисов | ![Planned](https://img.shields.io/badge/-Planned-8b5cf6) | Запланировано: `orcestr-auth`, `orcestr-fastapi-auth`, `orcestr-next-auth` |
+| Orcestr UI | Публичная UI-библиотека из продуктовой разработки | ![Dev](https://img.shields.io/badge/-Dev-f59e0b) | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui) |
+| Orcestr Icons | Пакет разных видов иконок как дополнение к Orcestr UI | ![Planned](https://img.shields.io/badge/-Planned-8b5cf6) | Запланировано |
+| Orcestr Repo Notifier | GitHub Action для Codex-generated Telegram development updates | ![Released](https://img.shields.io/badge/-Released-2ea44f) | [Artasov/orcestr-repo-notifier](https://github.com/Artasov/orcestr-repo-notifier) |
+| Orcestr Media Transcriber | Репозиторий для транскрибации медиа | ![Dev](https://img.shields.io/badge/-Dev-f59e0b) | [Artasov/orcestr-media-transcriber](https://github.com/Artasov/orcestr-media-transcriber) |
+| Orcestr Media Assistant | Telegram-first ассистент для вашего медиа-пространства | ![Planned](https://img.shields.io/badge/-Planned-8b5cf6) | Запланировано |
+| Beauty | AI-продукт для подбора образа | ![Beta](https://img.shields.io/badge/-Beta-3b82f6) | [beauty.orcestr.com](https://beauty.orcestr.com) |
+| Deliveries | Операционный продукт для закупок, остатков, заказов и финансов | ![Dev](https://img.shields.io/badge/-Dev-f59e0b) | [deliveries.orcestr.com](https://deliveries.orcestr.com) |
 
 ## Содержание
 
 - [Проекты экосистемы](#проекты-экосистемы)
 - [Продуктовое направление](#продуктовое-направление)
-- [Product surfaces](#product-surfaces)
+- [Products](#products)
+    - [Orcestr Auth](#orcestr-auth)
+    - [Orcestr UI](#orcestr-ui)
+    - [Orcestr Icons](#orcestr-icons)
+    - [Orcestr Repo Notifier](#orcestr-repo-notifier)
+    - [Orcestr Media Transcriber](#orcestr-media-transcriber)
+    - [Orcestr Media Assistant](#orcestr-media-assistant)
     - [Beauty](#beauty)
     - [Deliveries](#deliveries)
-    - [Orcestr UI](#orcestr-ui)
-    - [Orcestr Repo Notifier](#orcestr-repo-notifier)
     - [Platform foundation](#platform-foundation)
 - [Публичные репозитории](#публичные-репозитории)
 - [Roadmap](#roadmap)
 - [Community token](#community-token)
 - [Maintainer](#maintainer)
 
-## Продуктовое направление
-
-Ядро Orcestr - общая основа. Product surfaces нужны, чтобы проверять и улучшать эту основу в реальных workflows.
-
-Цель - делать сфокусированные продукты и не переписывать каждый раз один и тот же операционный слой. Долгосрочное
-направление - developer toolkit и open-source библиотека из компонентов, которые прошли реальное продуктовое
-использование.
-
-Open source - часть roadmap, а не отдельное маркетинговое обещание. Начинаем с того, что безопаснее и полезнее всего
-переиспользовать: UI components, app shell patterns, workflow primitives и design tokens. По мере зрелости основы больше
-технических частей можно будет открывать как публичные пакеты.
-
 Часть продуктового кода останется закрытой. Переиспользуемая инфраструктура должна становиться открытой, когда она
 стабильна, понятна и полезна вне Orcestr.
 
-## Product surfaces
+## Products
 
-Product surfaces - не вся история Orcestr. Они показывают, как общая основа ведет себя в реальной продуктовой работе.
+### Orcestr Auth
+
+Статус: запланировано.
+
+Orcestr Auth планируется как общий слой авторизации в трех репозиториях: `orcestr-auth`, `orcestr-fastapi-auth` и `orcestr-next-auth`. Он должен работать с React и Next.js на frontend, FastAPI + SQLAlchemy на backend, а также покрывать обычную авторизацию и OAuth-сценарии. Цель - переиспользовать identity, sessions и продуктовые сценарии авторизации во всех Orcestr surfaces.
+
+Теги: authentication, React, Next.js, FastAPI, SQLAlchemy, OAuth, identity, planned.
+
+### Orcestr UI
+
+Статус: публичный UI-слой.
+
+[Orcestr UI](https://github.com/Artasov/orcestr-ui) - переиспользуемая UI-основа, выделенная из реальной продуктовой разработки Orcestr. Здесь собираются components, app shell patterns, workflow primitives и design tokens, которые используются в product surfaces.
+
+Теги: UI, components, dashboards, workflows, design tokens, open source.
+
+### Orcestr Icons
+
+Статус: запланировано.
+
+Orcestr Icons - запланированный пакет с разными видами иконок и наборами иконок. Он должен работать как дополнение к основному Orcestr UI kit: расширять визуальный язык продукта, но не раздувать базовую UI-библиотеку.
+
+Теги: icons, icon sets, UI kit, design system, planned.
+
+### Orcestr Repo Notifier
+
+Статус: публичный GitHub Action.
+
+[Orcestr Repo Notifier](https://github.com/Artasov/orcestr-repo-notifier) превращает изменения в репозитории в понятные Telegram-обновления. Он помогает командам, founders и public builders показывать прогресс продукта после каждого push без ручного написания постов.
+
+Теги: Codex, Telegram, GitHub Actions, review, release notes, development updates.
+
+### Orcestr Media Transcriber
+
+Статус: репозиторий в ранней активной разработке.
+
+[Orcestr Media Transcriber](https://github.com/Artasov/orcestr-media-transcriber) - репозиторий для транскрибации аудио и видео. Он нужен как практическая основа для переиспользуемых транскриптов, поиска по медиа и будущих сценариев медиа-помощников.
+
+Теги: media, transcription, AI, audio, video, workflows.
+
+### Orcestr Media Assistant
+
+Статус: запланировано.
+
+Orcestr Media Assistant - запланированный большой ассистент для вашего медиа-пространства. Первым модулем должен стать Telegram-модуль автоматической беседы в чате: он сможет рассказывать новым людям о проекте, отвечать на частые вопросы или просто поддерживать полезный диалог. Дальше он может связывать транскрипты, медиатеку и workflows для контента.
+
+Теги: media assistant, Telegram, chat automation, AI, transcription, planned.
 
 ### Beauty
 
@@ -129,22 +163,6 @@ Deliveries - глубокий product surface для проверки общей
 - задачи, согласования, комментарии и документы;
 - operational dashboards и search.
 
-### Orcestr UI
-
-Статус: публичный UI-слой.
-
-[Orcestr UI](https://github.com/Artasov/orcestr-ui) - переиспользуемая UI-основа, выделенная из реальной продуктовой разработки Orcestr. Здесь собираются components, app shell patterns, workflow primitives и design tokens, которые используются в product surfaces.
-
-Теги: UI, components, dashboards, workflows, design tokens, open source.
-
-### Orcestr Repo Notifier
-
-Статус: публичный GitHub Action.
-
-[Orcestr Repo Notifier](https://github.com/Artasov/orcestr-repo-notifier) превращает изменения в репозитории в понятные Telegram-обновления. Он помогает командам, founders и public builders показывать прогресс продукта после каждого push без ручного написания постов.
-
-Теги: Codex, Telegram, GitHub Actions, review, release notes, development updates.
-
 ### Platform foundation
 
 Статус: общая основа.
@@ -171,24 +189,20 @@ Deliveries - глубокий product surface для проверки общей
 - background jobs и scheduler;
 - admin tooling.
 
-## Публичные репозитории
-
-Первые публичные части вокруг Orcestr.
-
-- [Orcestr UI](https://github.com/Artasov/orcestr-ui) - переиспользуемые UI-компоненты и продуктовые interface primitives.
-- [Orcestr Repo Notifier](https://github.com/Artasov/orcestr-repo-notifier) - GitHub Action для Codex-generated Telegram development updates.
-- [Orcestr Overview](https://github.com/Artasov/orcestr-overview) - публичное описание продуктовой экосистемы.
-
 ## Roadmap
 
 1. Стабилизировать Beauty beta.
 2. Подготовиться к оплате через SOL для бета тестирования.
-2. `31.07.2026` - Открыть beta тест и подготовить бесплатный beta-test для holders.
-3. Улучшить публичный sharing и conversion из галереи.
-4. Продолжать реальные product surfaces для проверки общей основы.
-5. `16.08.2026` - Выделить переиспользуемые UI-примитивы в `orcestr-ui`.
-6. Открывать выбранные workflow и backend части, когда они достаточно стабильны.
-7. Развивать Telegram community через обновления разработки, beta feedback и обсуждение продукта.
+3. `31.07.2026` - Открыть beta test и подготовить бесплатный beta-test для holders.
+4. Улучшить публичный sharing и conversion из галереи.
+5. Продолжать реальные product surfaces для проверки общей основы.
+6. `16.08.2026` - Выделить переиспользуемые UI-примитивы в `orcestr-ui`.
+7. Ввести `orcestr-media-transcriber` в экосистему как основу для аудио/видео транскриптов и поиска по медиа.
+8. Спланировать Orcestr Auth как `orcestr-auth`, `orcestr-fastapi-auth` и `orcestr-next-auth` для React, Next.js и FastAPI + SQLAlchemy сервисов.
+9. Сформировать Orcestr Icons как дополнительный пакет иконок для основного UI kit.
+10. Спланировать Orcestr Media Assistant вокруг media spaces, начав с Telegram-модуля автоматической беседы.
+11. Открывать выбранные workflow и backend части, когда они достаточно стабильны.
+12. Развивать Telegram community через обновления разработки, beta feedback и обсуждение продукта.
 
 ## Community Token
 
