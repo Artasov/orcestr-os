@@ -8,7 +8,7 @@
   </a>
 </p>
 
-# [Orcestr](https://orcestr.com) is open-source
+# [Orcestr](https://orcestr.com) Is Open-Source
 
 Основной сайт: [orcestr.com](https://orcestr.com)
 
