@@ -8,82 +8,123 @@
   </a>
 </p>
 
-# [Orcestr](https://orcestr.com)
+# [Orcestr](https://orcestr.com) is open-source
 
 Main website: [orcestr.com](https://orcestr.com)
 
-Orcestr is a personal product-codebase growing into a public developer toolkit and open-source library.
+Orcestr is an ecosystem with open-source libraries, a developer toolkit, applied tools and real products.
 
-The codebase is built around a shared product foundation: UI patterns, application shell, identity, permissions, credits, files, notifications, workflows, statistics and background jobs. Product surfaces use this foundation in real scenarios, while the strongest reusable parts can later become public packages.
+The public direction has three parts:
 
-The public direction has two tracks:
-
-- product surfaces people can use;
-- open-source pieces extracted from production, starting with Orcestr UI and later moving into workflow, backend and application infrastructure.
+- Open-source **lib**s.
+- Open-source **tool**s.
+- Web **product**s.
 
 ## Ecosystem Projects
 
-Orcestr is not a single repository. It is a product ecosystem with public products, open-source tools and a shared platform layer.
-
-| Project        | Type                                                           | Link                                                                              |
-|----------------|----------------------------------------------------------------|-----------------------------------------------------------------------------------|
-| Orcestr        | Main website and product entry point                           | [orcestr.com](https://orcestr.com)                                                |
-| Beauty         | AI look product                                                | [beauty.orcestr.com](https://beauty.orcestr.com)                                  |
-| Deliveries     | Operations product for purchasing, stock, orders and finance   | [deliveries.orcestr.com](https://deliveries.orcestr.com)                          |
-| Orcestr UI Kit | Public UI component library extracted from product work        | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui)                       |
-| Repo Notifier  | GitHub Action for Codex-generated Telegram development updates | [Artasov/orcestr-repo-notifier](https://github.com/Artasov/orcestr-repo-notifier) |
-| Overview       | Public product and ecosystem description                       | [Artasov/orcestr-overview](https://github.com/Artasov/orcestr-overview)           |
+| Project | Type | Status | Link |
+| --- | --- | --- | --- |
+| Orcestr Auth | Shared authentication layer for React, Next.js and FastAPI services | ![Planned](https://img.shields.io/badge/-Planned-8b5cf6) | Planned: `orcestr-auth`, `orcestr-fastapi-auth`, `orcestr-next-auth` |
+| Orcestr UI | Public UI library extracted from product development | ![Dev](https://img.shields.io/badge/-Dev-f59e0b) | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui) |
+| Orcestr Icons | Package of different icon styles as an add-on to Orcestr UI | ![Planned](https://img.shields.io/badge/-Planned-8b5cf6) | Planned |
+| Orcestr Repo Notifier | GitHub Action for Codex-generated Telegram development updates | ![Released](https://img.shields.io/badge/-Released-2ea44f) | [Artasov/orcestr-repo-notifier](https://github.com/Artasov/orcestr-repo-notifier) |
+| Orcestr Media Transcriber | Repository for media transcription | ![Dev](https://img.shields.io/badge/-Dev-f59e0b) | [Artasov/orcestr-media-transcriber](https://github.com/Artasov/orcestr-media-transcriber) |
+| Orcestr Media Assistant | Telegram-first assistant for your media space | ![Planned](https://img.shields.io/badge/-Planned-8b5cf6) | Planned |
+| Beauty | AI product for look selection | ![Beta](https://img.shields.io/badge/-Beta-3b82f6) | [beauty.orcestr.com](https://beauty.orcestr.com) |
+| Deliveries | Operations product for purchasing, stock, orders and finance | ![Dev](https://img.shields.io/badge/-Dev-f59e0b) | [deliveries.orcestr.com](https://deliveries.orcestr.com) |
 
 ## Contents
 
 - [Ecosystem Projects](#ecosystem-projects)
 - [Product Direction](#product-direction)
-- [Product Surfaces](#product-surfaces)
-  - [Beauty](#beauty)
-  - [Deliveries](#deliveries)
-  - [Orcestr UI Kit](#orcestr-ui)
-  - [Repo Notifier](#orcestr-repo-notifier)
-  - [Platform Foundation](#platform-foundation)
+- [Products](#products)
+    - [Orcestr Auth](#orcestr-auth)
+    - [Orcestr UI](#orcestr-ui)
+    - [Orcestr Icons](#orcestr-icons)
+    - [Orcestr Repo Notifier](#orcestr-repo-notifier)
+    - [Orcestr Media Transcriber](#orcestr-media-transcriber)
+    - [Orcestr Media Assistant](#orcestr-media-assistant)
+    - [Beauty](#beauty)
+    - [Deliveries](#deliveries)
+    - [Platform foundation](#platform-foundation)
 - [Public Repositories](#public-repositories)
 - [Roadmap](#roadmap)
-- [Community Token](#community-token)
+- [Community token](#community-token)
 - [Maintainer](#maintainer)
 
-## Product Direction
+Some product code will stay closed. Reusable infrastructure should become open when it is stable, understandable and useful outside Orcestr.
 
-The core of Orcestr is the shared foundation. Product surfaces are practical ways to test and improve that foundation in real workflows.
+## Products
 
-The goal is to build focused products without rewriting the same operating layer every time. The long-term direction is a developer toolkit and open-source library built from components that survived real product use.
+### Orcestr Auth
 
-Open source is part of the roadmap, not a separate marketing promise. We start with the parts that are easiest to reuse safely - UI components, app shell patterns, workflow primitives and design tokens. As the foundation matures, more technical pieces can become public packages.
+Status: planned.
 
-Some product code will stay closed. Reusable infrastructure should become open when it is stable, documented and useful outside Orcestr.
+Orcestr Auth is planned as a shared authentication layer in three repositories: `orcestr-auth`, `orcestr-fastapi-auth` and `orcestr-next-auth`. It should work with React and Next.js on the frontend, FastAPI + SQLAlchemy on the backend, and cover both regular authentication and OAuth flows. The goal is to reuse identity, sessions and product authentication scenarios across all Orcestr surfaces.
 
-## Product Surfaces
+Tags: authentication, React, Next.js, FastAPI, SQLAlchemy, OAuth, identity, planned.
 
-Product surfaces are not the whole story of Orcestr. They show how the foundation behaves in real product work.
+### Orcestr UI
+
+Status: public UI layer.
+
+[Orcestr UI](https://github.com/Artasov/orcestr-ui) is a reusable UI foundation extracted from real Orcestr product development. It collects components, app shell patterns, workflow primitives and design tokens used in product surfaces.
+
+Tags: UI, components, dashboards, workflows, design tokens, open source.
+
+### Orcestr Icons
+
+Status: planned.
+
+Orcestr Icons is a planned package with different icon styles and icon sets. It should work as an add-on to the main Orcestr UI kit: expanding the product visual language without bloating the base UI library.
+
+Tags: icons, icon sets, UI kit, design system, planned.
+
+### Orcestr Repo Notifier
+
+Status: public GitHub Action.
+
+[Orcestr Repo Notifier](https://github.com/Artasov/orcestr-repo-notifier) turns repository changes into clear Telegram updates. It helps teams, founders and public builders show product progress after each push without manually writing posts.
+
+Tags: Codex, Telegram, GitHub Actions, review, release notes, development updates.
+
+### Orcestr Media Transcriber
+
+Status: repository in early active development.
+
+[Orcestr Media Transcriber](https://github.com/Artasov/orcestr-media-transcriber) is a repository for transcribing audio and video. It is needed as a practical foundation for reusable transcripts, media search and future media assistant scenarios.
+
+Tags: media, transcription, AI, audio, video, workflows.
+
+### Orcestr Media Assistant
+
+Status: planned.
+
+Orcestr Media Assistant is a planned large assistant for your media space. The first module should be a Telegram module for automatic chat conversations: it can tell new people about a project, answer common questions or simply support a useful dialogue. Later it can connect transcripts, a media library and content workflows.
+
+Tags: media assistant, Telegram, chat automation, AI, transcription, planned.
 
 ### Beauty
 
 Status: beta.
 
-Beauty is a public AI look product for trying, editing, saving and sharing visual ideas on a real photo. It already includes:
+Beauty is a public AI product for trying on, editing, saving and sharing visual ideas on a real photo. It already includes:
 
-- public landing and multilingual app shell;
+- public landing page and multilingual app shell;
 - AI chat with image and voice input;
-- generated looks, before/after preview and personal look history;
-- public share pages for generated looks;
+- generated looks, before/after preview and look history;
+- public pages for shared looks;
 - look gallery and style presets;
-- early groundwork for optional salon and business workflows;
+- early foundation for optional salon and business workflows;
 - AI credit accounting and generation limits.
 
-The current focus is beta quality: stable generation, clear pricing, shareable results and a simple user flow from photo to saved look.
+The current focus is beta quality: stable generation, clear prices, beautiful shared results and a simple path from photo to saved look.
 
 Navigation:
 
 - AI chat and generation flow;
 - look gallery;
-- personal looks;
+- my looks;
 - shared look pages;
 - style presets;
 - settings and consent flow;
@@ -93,7 +134,7 @@ Navigation:
 
 Status: large module in active development.
 
-Deliveries is an operations product for companies that manage products, suppliers, orders, stock and payments. The current codebase covers:
+Deliveries is an operations product for companies that manage products, suppliers, orders, warehouses and payments. The current codebase covers:
 
 - product catalog, brands, groups, tags and imports;
 - suppliers, customers and counterparties;
@@ -104,7 +145,7 @@ Deliveries is an operations product for companies that manage products, supplier
 - documents, approvals, tasks, comments, notifications and search;
 - operational dashboards, computed flags and risk views.
 
-Deliveries is a deep product surface for stress-testing the shared foundation on real multi-step business workflows.
+Deliveries is a deep product surface for testing the shared foundation on real multi-step business processes.
 
 Navigation:
 
@@ -118,34 +159,18 @@ Navigation:
 - tasks, approvals, comments and documents;
 - operational dashboards and search.
 
-### Orcestr UI
-
-Status: public UI layer.
-
-[Orcestr UI](https://github.com/Artasov/orcestr-ui) is the reusable UI foundation extracted from real Orcestr product work. It collects components, app shell patterns, workflow primitives and design tokens used across product surfaces.
-
-Tags: UI, components, dashboards, workflows, design tokens, open source.
-
-### Orcestr Repo Notifier
-
-Status: public GitHub Action.
-
-[Orcestr Repo Notifier](https://github.com/Artasov/orcestr-repo-notifier) turns repository changes into clear Telegram updates. It helps teams, founders and public builders show product progress after each push without manually writing every update.
-
-Tags: Codex, Telegram, GitHub Actions, review, release notes, development updates.
-
-### Platform Foundation
+### Platform foundation
 
 Status: shared foundation.
 
-The platform layer powers all modules:
+The platform layer supports all modules:
 
 - multi-tenant access model;
 - module-level permissions;
 - reusable workflow primitives;
 - Taskiq background jobs and scheduler;
 - shared WebSocket updates;
-- media and document infrastructure;
+- media/document infrastructure;
 - AI provider runtime and credit ledger;
 - admin tooling through XLAdmin.
 
@@ -160,34 +185,30 @@ Navigation:
 - background jobs and scheduler;
 - admin tooling.
 
-## Public Repositories
-
-These repositories are the first public pieces around Orcestr.
-
-- [Orcestr UI](https://github.com/Artasov/orcestr-ui) - reusable UI components and product interface primitives.
-- [Orcestr Repo Notifier](https://github.com/Artasov/orcestr-repo-notifier) - GitHub Action for Codex-generated Telegram development updates.
-- [Orcestr Overview](https://github.com/Artasov/orcestr-overview) - public description of the product ecosystem.
-
 ## Roadmap
 
 1. Stabilize Beauty beta.
 2. Prepare SOL payments for beta testing.
-2. `31.07.2026` - Open beta testing and prepare free beta-test access for holders.
-3. Improve public sharing and gallery conversion.
-4. Continue real product surfaces to stress-test the shared foundation.
-5. `16.08.2026` - Extract reusable UI primitives into `orcestr-ui`.
-6. Open selected workflow and backend pieces when they are stable enough.
-7. Grow the Telegram community through development updates, beta feedback and product discussion.
+3. `31.07.2026` - Open beta test and prepare free beta-test access for holders.
+4. Improve public sharing and gallery conversion.
+5. Continue real product surfaces to test the shared foundation.
+6. `16.08.2026` - Extract reusable UI primitives into `orcestr-ui`.
+7. Bring `orcestr-media-transcriber` into the ecosystem as a foundation for audio/video transcripts and media search.
+8. Plan Orcestr Auth as `orcestr-auth`, `orcestr-fastapi-auth` and `orcestr-next-auth` for React, Next.js and FastAPI + SQLAlchemy services.
+9. Shape Orcestr Icons as an additional icon package for the main UI kit.
+10. Plan Orcestr Media Assistant around media spaces, starting with a Telegram automatic conversation module.
+11. Open selected workflow and backend pieces when they are stable enough.
+12. Grow the Telegram community through development updates, beta feedback and product discussion.
 
 ## Community Token
 
 ORCESTR is an experimental Community Support Token connected to the Orcestr ecosystem.
 
-It is an optional supporter layer for people following the build early: development updates, beta participation, supporter identity and limited non-financial perks when they make sense.
+It is an optional supporter layer for people following the development early: development updates, beta participation, supporter identity and limited non-financial perks when they make sense.
 
-It is not equity, not revenue share, not governance over the company and not a promise of profit. The product does not depend on the token.
+It is not equity, not revenue share, not company governance and not a promise of profit. The product does not depend on the token.
 
-Possible holder perks may include supporter badges and free beta-test access when public testing opens and the product is ready for it. Perks are experimental, limited and can change.
+Possible holder perks may include supporter badges and free beta-test access when we open public testing and the product is ready. Perks are experimental, limited and can change.
 
 See [TOKEN.md](TOKEN.md) for the public token principles.
 
