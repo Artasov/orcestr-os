@@ -25,6 +25,7 @@ The public direction has three parts:
 | Project | Type | Status | Link | Description |
 | --- | --- | --- | --- | --- |
 | Orcestr Auth | lib | ![Planned](https://img.shields.io/badge/-Planned-8b5cf6) | Planned: `orcestr-auth`, `orcestr-fastapi-auth`, `orcestr-next-auth` | Shared authentication layer in three repositories: `orcestr-auth`, `orcestr-fastapi-auth` and `orcestr-next-auth`. It should work with React and Next.js on the frontend, FastAPI + SQLAlchemy on the backend, and cover both regular authentication and OAuth flows. |
+| Orcestr Commerce | lib | ![Beta](https://img.shields.io/badge/-Beta-3b82f6) | `orcestr-commerce` | Composable commerce core for product catalog records, checkout orders, order items and payment systems, with SQLAlchemy models, explicit module wiring and FastAPI router assembly. The repository is not public yet. |
 | Orcestr UI | lib | ![Dev](https://img.shields.io/badge/-Dev-f59e0b) ![Beta](https://img.shields.io/badge/-Beta-3b82f6) | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui) | Reusable UI foundation extracted from real Orcestr product development: components, app shell patterns, workflow primitives and design tokens used in product surfaces. |
 | Orcestr Icons | lib | ![Planned](https://img.shields.io/badge/-Planned-8b5cf6) | Planned | Package with different icon styles and icon sets. It works as an add-on to the main Orcestr UI kit: expanding the product visual language without bloating the base UI library. |
 | Orcestr Repo Notifier | tool | ![Released](https://img.shields.io/badge/-Released-2ea44f) | [Artasov/orcestr-repo-notifier](https://github.com/Artasov/orcestr-repo-notifier) | Turns repository changes into clear Telegram updates so teams, founders and public builders can show product progress after each push without manually writing posts. |
@@ -56,6 +57,8 @@ Some product code will stay closed. Reusable infrastructure should become open w
 10. Plan Orcestr Media Assistant around media spaces, starting with a Telegram automatic conversation module.
 11. Open selected workflow and backend pieces when they are stable enough.
 12. Grow the Telegram community through development updates, beta feedback and product discussion.
+13. Turn repeated product infrastructure into stable public packages with clear documentation, examples and versioned release flows.
+14. Grow Orcestr into a coherent toolkit for building SaaS and commerce products: UI, auth, commerce, media, workflows and operational backends.
 
 ## Community Token
 
