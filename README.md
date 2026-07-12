@@ -26,7 +26,7 @@ The public direction has three parts:
 
 | Project | Type | Status | Link | Description |
 | --- | --- | --- | --- | --- |
-| Orcestr Auth | lib | ![Planned](https://img.shields.io/badge/-Planned-8b5cf6) | Planned: `orcestr-auth`, `orcestr-fastapi-auth`, `orcestr-next-auth` | Shared authentication layer in three repositories: `orcestr-auth`, `orcestr-fastapi-auth` and `orcestr-next-auth`. It should work with React and Next.js on the frontend, FastAPI + SQLAlchemy on the backend, and cover both regular authentication and OAuth flows. |
+| Orcestr Auth | lib | ![Beta](https://img.shields.io/badge/-Beta-3b82f6) | [Artasov/orcestr-auth](https://github.com/Artasov/orcestr-auth) | Reusable authentication foundation for Python/FastAPI backends, browser clients, React Query, ready-made forms on `@orcestr/ui` and Next.js guards. It covers sessions, recovery, optional GitHub, Google and Yandex OAuth, CSRF protection and WebSocket tickets while applications retain their own users, permissions, branding and tenant logic. |
 | Orcestr Commerce | lib | ![Beta](https://img.shields.io/badge/-Beta-3b82f6) | `orcestr-commerce` | Composable commerce core for product catalog records, checkout orders, order items and payment systems, with SQLAlchemy models, explicit module wiring and FastAPI router assembly. The repository is not public yet. |
 | Orcestr UI | lib | ![Dev](https://img.shields.io/badge/-Dev-f59e0b) ![Beta](https://img.shields.io/badge/-Beta-3b82f6) | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui) | Reusable UI foundation extracted from real Orcestr product development: components, app shell patterns, workflow primitives and design tokens used in product surfaces. |
 | Orcestr Icons | lib | ![Planned](https://img.shields.io/badge/-Planned-8b5cf6) | Planned | Package with different icon styles and icon sets. It works as an add-on to the main Orcestr UI kit: expanding the product visual language without bloating the base UI library. |
@@ -54,7 +54,7 @@ Some product code will stay closed. Reusable infrastructure should become open w
 5. Continue real product surfaces to test the shared foundation.
 6. `16.08.2026` - Extract reusable UI primitives into `orcestr-ui`.
 7. Bring `orcestr-media-transcriber` into the ecosystem as a foundation for audio/video transcripts and media search.
-8. Plan Orcestr Auth as `orcestr-auth`, `orcestr-fastapi-auth` and `orcestr-next-auth` for React, Next.js and FastAPI + SQLAlchemy services.
+8. Stabilize the Orcestr Auth beta and its public APIs across the Python, browser, React, forms and Next.js packages.
 9. Shape Orcestr Icons as an additional icon package for the main UI kit.
 10. Plan Orcestr Media Assistant around media spaces, starting with a Telegram automatic conversation module.
 11. Open selected workflow and backend pieces when they are stable enough.
