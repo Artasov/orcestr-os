@@ -10,6 +10,8 @@
 
 # [Orcestr](https://orcestr.com) is open-source
 
+[![Content license: CC BY 4.0](https://img.shields.io/badge/Content-CC_BY_4.0-lightgrey.svg)](./LICENSE)
+
 Main website: [orcestr.com](https://orcestr.com)
 
 Orcestr is an ecosystem with open-source libraries, a developer toolkit, applied tools and real products.
@@ -75,3 +77,10 @@ See [TOKEN.md](TOKEN.md) for the public token principles.
 ## Maintainer
 
 Public updates are currently maintained by [@Artasov](https://github.com/Artasov).
+
+## License and attribution
+
+Unless a file states otherwise, the prose and documentation are licensed under
+[CC BY 4.0](./LICENSE), including commercial reuse with attribution and an indication of changes.
+Use the attribution form in [NOTICE](./NOTICE). The Orcestr name, logos, banner, token symbols and
+other brand assets are excluded from CC BY 4.0; see [TRADEMARKS.md](./TRADEMARKS.md).
