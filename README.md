@@ -26,6 +26,7 @@ The public direction has three parts:
 
 | Project | Type | Status | Link | Description |
 | --- | --- | --- | --- | --- |
+| Orcestr Core | lib | ![Beta](https://img.shields.io/badge/-Beta-3b82f6) | [Artasov/orcestr-core](https://github.com/Artasov/orcestr-core) | Shared, domain-neutral contracts and runtime adapters for consistent API errors, request context, notifications and safe navigation across TypeScript, React, Next.js, Python and FastAPI applications. Published as three npm packages and one PyPI package. |
 | Orcestr Auth | lib | ![Beta](https://img.shields.io/badge/-Beta-3b82f6) | [Artasov/orcestr-auth](https://github.com/Artasov/orcestr-auth) | Reusable authentication foundation for Python/FastAPI backends, browser clients, React Query, ready-made forms on `@orcestr/ui` and Next.js guards. It covers sessions, recovery, optional GitHub, Google and Yandex OAuth, CSRF protection and WebSocket tickets while applications retain their own users, permissions, branding and tenant logic. |
 | Orcestr Commerce | lib | ![Beta](https://img.shields.io/badge/-Beta-3b82f6) | `orcestr-commerce` | Composable commerce core for product catalog records, checkout orders, order items and payment systems, with SQLAlchemy models, explicit module wiring and FastAPI router assembly. The repository is not public yet. |
 | Orcestr UI | lib | ![Dev](https://img.shields.io/badge/-Dev-f59e0b) ![Beta](https://img.shields.io/badge/-Beta-3b82f6) | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui) | Reusable UI foundation extracted from real Orcestr product development: components, app shell patterns, workflow primitives and design tokens used in product surfaces. |
@@ -39,9 +40,29 @@ The public direction has three parts:
 ## Contents
 
 - [Ecosystem Projects](#ecosystem-projects)
+- [Shared Core](#shared-core)
 - [Roadmap](#roadmap)
 - [Community token](#community-token)
 - [Maintainer](#maintainer)
+
+## Shared Core
+
+[Orcestr Core](https://github.com/Artasov/orcestr-core) is the cross-runtime foundation for behavior that must remain
+consistent between Orcestr applications without belonging to a product domain or a UI design system. Its packages share one
+strict API error contract while keeping framework-specific integrations at the edges:
+
+- [`@orcestr/core`](https://www.npmjs.com/package/@orcestr/core) provides framework-independent API transport, error
+  parsing, field paths, error catalogs and safe internal navigation primitives;
+- [`@orcestr/core-react`](https://www.npmjs.com/package/@orcestr/core-react) connects error presentation and notifications
+  to React and TanStack Query without rendering its own UI;
+- [`@orcestr/core-next`](https://www.npmjs.com/package/@orcestr/core-next) provides the small Next.js boundary for requests,
+  origins and redirects;
+- [`orcestr-core`](https://pypi.org/project/orcestr-core/) provides Python error models, request context and optional FastAPI
+  handlers, OpenAPI integration and request-ID middleware.
+
+Core owns shared contracts and transport mechanics. Product and authentication packages still own their business error
+codes, translations and rules, while visual components and design tokens remain in Orcestr UI. This dependency direction
+keeps the common foundation reusable without turning it into a monolithic application framework.
 
 Some product code will stay closed. Reusable infrastructure should become open when it is stable, understandable and useful outside Orcestr.
 
