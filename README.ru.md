@@ -26,6 +26,7 @@ Orcestr - экосистема где есть open-source библиотеки,
 
 | Проект                    | Тип     | Статус                                                                                                       | Ссылка                                                                                    | Описание                                                                                                                                                                                                                                             |
 |---------------------------|---------|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Orcestr Core              | lib     | ![Beta](https://img.shields.io/badge/-Beta-3b82f6)                                                           | [Artasov/orcestr-core](https://github.com/Artasov/orcestr-core)                           | Общие, независимые от бизнес-домена контракты и runtime-адаптеры для единообразной обработки API-ошибок, контекста запросов, уведомлений и безопасной навигации в TypeScript, React, Next.js, Python и FastAPI. Публикуется как три npm-пакета и один пакет на PyPI. |
 | Orcestr Auth              | lib     | ![Beta](https://img.shields.io/badge/-Beta-3b82f6)                                                           | [Artasov/orcestr-auth](https://github.com/Artasov/orcestr-auth)                           | Переиспользуемая основа авторизации для Python/FastAPI backend, браузерных клиентов, React Query, готовых форм на `@orcestr/ui` и защитных helpers для Next.js. Она покрывает сессии, восстановление, опциональные GitHub, Google и Яндекс OAuth, CSRF-защиту и WebSocket tickets, а пользователи, permissions, брендинг и tenant logic остаются в приложении. |
 | Orcestr Commerce          | lib     | ![Beta](https://img.shields.io/badge/-Beta-3b82f6)                                                           | `orcestr-commerce`                                                                        | Composable commerce core для записей каталога, checkout orders, order items и payment systems: SQLAlchemy models, явная сборка через CommerceModule и FastAPI router assembly. Репозиторий пока не публичный.                                           |
 | Orcestr UI                | lib     | ![Dev](https://img.shields.io/badge/-Dev-f59e0b) ![Beta](https://img.shields.io/badge/-Beta-3b82f6)          | [Artasov/orcestr-ui](https://github.com/Artasov/orcestr-ui)                               | Переиспользуемая UI-основа, выделенная из реальной продуктовой разработки Orcestr: components, app shell patterns, workflow primitives и design tokens, которые используются в product surfaces.                                                     |
@@ -39,9 +40,29 @@ Orcestr - экосистема где есть open-source библиотеки,
 ## Содержание
 
 - [Проекты экосистемы](#проекты-экосистемы)
+- [Общий Core](#общий-core)
 - [Roadmap](#roadmap)
 - [Community token](#community-token)
 - [Maintainer](#maintainer)
+
+## Общий Core
+
+[Orcestr Core](https://github.com/Artasov/orcestr-core) — кросс-платформенная основа для поведения, которое должно быть
+одинаковым во всех приложениях Orcestr, но не относится к конкретному бизнес-домену или визуальной дизайн-системе. Пакеты
+используют единый строгий контракт API-ошибок, а интеграции с фреймворками остаются на внешних слоях:
+
+- [`@orcestr/core`](https://www.npmjs.com/package/@orcestr/core) содержит независимые от фреймворков API transport,
+  разбор ошибок, пути полей, каталоги ошибок и примитивы безопасной внутренней навигации;
+- [`@orcestr/core-react`](https://www.npmjs.com/package/@orcestr/core-react) связывает представление ошибок и уведомления
+  с React и TanStack Query, но не отрисовывает собственный UI;
+- [`@orcestr/core-next`](https://www.npmjs.com/package/@orcestr/core-next) содержит небольшой Next.js-слой для запросов,
+  origins и redirects;
+- [`orcestr-core`](https://pypi.org/project/orcestr-core/) содержит Python-модели ошибок, контекст запроса и опциональные
+  FastAPI handlers, интеграцию с OpenAPI и middleware для request ID.
+
+Core отвечает за общие контракты и механику передачи данных. Продуктовые и авторизационные пакеты по-прежнему владеют
+бизнес-кодами ошибок, переводами и правилами, а визуальные компоненты и design tokens остаются в Orcestr UI. Такое
+направление зависимостей сохраняет общую основу переиспользуемой и не превращает её в монолитный application framework.
 
 Часть продуктового кода останется закрытой. Переиспользуемая инфраструктура должна становиться открытой, когда она
 стабильна, понятна и полезна вне Orcestr.
